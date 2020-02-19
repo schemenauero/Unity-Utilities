@@ -34,7 +34,7 @@ and look like this:
 ## Setup
 1. Copy the files `Conversational.cs` and `BeginConversationExample.cs` (if using) to your Unity project.
 
-2. Setup your project like so:
+2. Setup your Canvas tree like so:
 ![Canvas Setup](../images/Conversational-Setup1.png)
 Where "Conversational" is a panel which contains two empties, SpeakerText and PlayerText, which each contain a TextMeshPro Text and a background image. Conversational also contains a global background.
 (don't forget to add the Conversational script to the Conversational Panel and wire those in and the BeginConversationExample to a button)
