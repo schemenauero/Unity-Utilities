@@ -21,6 +21,12 @@ public class StateMachine<T> {
         transitions[from] = tos;
     }
 
+    // from, *to's, same as above but don't need to pass in an array
+    // i.e. state.SetTransitions(State.Idle, State.Run);
+    public void SetTransitions(params T[] args) {
+        transitions[args[0]] = args.Skip(1).ToArray();
+    }
+    
     public bool CanTransition(T from, T to) {
         bool transitionIsDefined = transitions[from].Contains(to);
 
